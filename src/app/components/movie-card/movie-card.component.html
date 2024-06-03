@@ -1,0 +1,19 @@
+
+<p-card 
+    header={{movie.title}} 
+    [subheader]="getGenreNames().join(', ')"
+>
+    
+    <ng-template  pTemplate="header">
+        <img [alt]="movie.title" [src]="getImageUrl()" 
+        [routerLink]="['/movies', movie.id]"/>
+    </ng-template>
+    <!-- <p>
+        {{movie.overview}}
+    </p> -->
+
+        <div class="actions">
+            <p-button label="Comprar Boletos" class="w-full" styleClass="w-full" />
+        </div>
+
+</p-card>

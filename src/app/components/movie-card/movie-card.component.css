@@ -1,0 +1,35 @@
+:host ::ng-deep .p-card{
+   height: 800px;
+   width: 400px;
+   margin: 15px 15px;
+   position: relative;
+   cursor: pointer; 
+}
+
+:host ::ng-deep .p-card:hover{
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+    transition: background-color 0.7s, transform 0.7s;
+    box-shadow: 0 20px 40px rgba(25, 182, 146, 0.4);
+    z-index: 1;
+}
+:host ::ng-deep .p-card:hover button{
+    background-color: rgb(31, 41, 55);
+    color: var(--primary-color)
+}
+
+:host ::ng-deep .actions{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+img{
+    width: 100%;
+    height: 75%;
+}
+  
+  

@@ -1,0 +1,16 @@
+
+    <!-- <p-menubar [model]="menuItems">
+        <img src="../assets/logo.jpg" alt="" style="height: 40px;">
+    </p-menubar>
+       -->
+
+    <p-menubar [model]="menuItems">
+        <ng-template let-item pTemplate="item">
+          <a [routerLink]="item.routerLink" routerLinkActive="router-link-active" class="p-menuitem-link">
+            <i [class]="item.icon"></i>
+            <span>{{ item.label }}</span>
+          </a>
+        </ng-template>
+      </p-menubar>
+      
+      

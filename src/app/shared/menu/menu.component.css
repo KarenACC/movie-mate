@@ -1,0 +1,24 @@
+:host ::ng-deep .p-menubar {
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+:host ::ng-deep .p-menubar .p-menuitem-link:hover {
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  transition: background-color 0.7s;
+}
+
+::ng-deep .p-menubar .router-link-active {
+  border-radius: 10px;
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+}
+
+i{
+  margin-right: 5px;
+}
+
+a{
+  margin-right: 5px;
+}
